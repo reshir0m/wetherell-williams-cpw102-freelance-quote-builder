@@ -1,32 +1,15 @@
 def main():
-    nameRaw = AskName()
-    hours = AskHours()
-    rate = AskRate()
-    expenses = AskExpenses()
+    nameRaw = input("Client name: ")
+    hours = input("Estimated work hours: ")
+    rate = input("Hourly rate: ")
+    expenses = input("Direct expenses: ")
     laborCost = CalculateLaborCost(rate, hours)
     totalCost = CalculateTotal(laborCost, expenses)
-    print("PROJECT ESTIMATE")
+    print("\nPROJECT ESTIMATE")
     FormatName(nameRaw)
     FormatCost("Labor cost:", laborCost)
     FormatCost("Direct expenses:", expenses)
     FormatCost("Total estimate:", totalCost)
-
-
-def AskName():
-    nameRaw = input("Client name: ")
-    return nameRaw
-
-def AskHours():
-    hours = input("Estimated work hours: ")
-    return hours
-
-def AskRate():
-    rate = input("Hourly rate: ")
-    return rate
-
-def AskExpenses():
-    expenses = input("Direct expenses: ")
-    return expenses
 
 def CalculateLaborCost(rate, hours):
     laborCost = float(rate) * float(hours)
