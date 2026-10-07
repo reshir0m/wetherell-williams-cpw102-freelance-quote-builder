@@ -29,4 +29,5 @@ def main():
     print(f"Labor cost: ${labor_cost:.2f}")
     print(f"Direct cost: ${dir_exp:.2f}")
     print(f"Total estimate: ${tot_est:.2f}")
+    
 main()
