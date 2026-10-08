@@ -25,9 +25,9 @@ def main():
     # Output calculations from user inputs
     print("\n")
     print("PROJECT ESTIMATE")
-    print(client_name)
+    print("Client name:", (client_name))
     print(f"Labor cost: ${labor_cost:.2f}")
     print(f"Direct cost: ${dir_exp:.2f}")
     print(f"Total estimate: ${tot_est:.2f}")
-    
+
 main()
